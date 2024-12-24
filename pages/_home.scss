@@ -1,13 +1,11 @@
-.article {
-  background-color: $background-color-main-medium;
-
+.home__article {
+  @include article-color($background-color-main-medium);
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 100px 10px 100px 10px;
 
-  .description {
+  .home__article-description {
     width: 40%;
     margin-right: 10px;
   }
@@ -15,7 +13,7 @@
     width: 40%;
     display: flex;
     img {
-      width: 50%;
+      width: 250px;
       text-align: center;
       margin: 10px;
       height: 350px;

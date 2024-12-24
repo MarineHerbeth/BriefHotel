@@ -31,3 +31,14 @@
   font-family: "Merriweather", serif;
   letter-spacing: 2px;
 }
+
+h1 {
+  font-size: 50px;
+  letter-spacing: normal;
+  font-family: "Merriweather", serif;
+}
+
+h2 {
+  @include slogan-size;
+  margin-bottom: -20px;
+}

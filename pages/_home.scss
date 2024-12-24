@@ -1,0 +1,33 @@
+.article {
+  background-color: $background-color-main-medium;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 10px 100px 10px;
+
+  .description {
+    width: 40%;
+    margin-right: 10px;
+  }
+  .images {
+    width: 40%;
+    display: flex;
+    img {
+      width: 50%;
+      text-align: center;
+      margin: 10px;
+      height: 350px;
+      object-fit: cover;
+    }
+    img[alt="Photographie restaurant"] {
+      position: relative;
+      top: 50px;
+    }
+    img[alt="Photographie chambre"] {
+      position: relative;
+      bottom: 50px;
+    }
+  }
+}

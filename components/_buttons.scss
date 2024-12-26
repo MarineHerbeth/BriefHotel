@@ -21,3 +21,10 @@
     @include slogan-size;
   }
 }
+
+.button-filled {
+  @extend .header__button;
+  border: none;
+  background-color: $text-orange;
+  width: 200px;
+}

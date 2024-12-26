@@ -139,6 +139,9 @@
         display: flex;
         flex-direction: column;
       }
+      .button-filled {
+        margin-left: 15px;
+      }
     }
   }
 }
@@ -146,21 +149,4 @@
 .article-marge-inverted {
   @extend .article-marge;
   flex-direction: row-reverse;
-  .home__article-image {
-    width: 50%;
-    img {
-      width: 100%;
-    }
-  }
-  .home__article-description {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    background-color: $background-color-main-light;
-    div {
-      padding: 15px;
-      display: flex;
-      flex-direction: column;
-    }
-  }
 }

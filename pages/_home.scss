@@ -1,0 +1,47 @@
+.home__article {
+  @include article-color($background-color-main-medium);
+  display: flex;
+  justify-content: center;
+  .article-marge {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .home__article-description {
+      width: 50%;
+    }
+    .images {
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: 250px;
+        text-align: center;
+        height: 350px;
+        object-fit: cover;
+      }
+      img[alt="Photographie restaurant"] {
+        position: relative;
+        top: 50px;
+      }
+      img[alt="Photographie chambre"] {
+        position: relative;
+        bottom: 50px;
+      }
+    }
+  }
+}
+
+.article-marge {
+  width: 90%;
+  margin: auto;
+}
+
+.home__article2 {
+  @include article-color($background-color-main-dark);
+  .home__grid-box1 {
+    background-image: url(/images/rooms/1.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}

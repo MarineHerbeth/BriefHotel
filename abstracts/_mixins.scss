@@ -1,0 +1,9 @@
+@mixin slogan-size {
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+@mixin article-color($color) {
+  background-color: $color;
+  padding: 100px 10px 100px 10px;
+}

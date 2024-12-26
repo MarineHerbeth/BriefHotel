@@ -1,0 +1,10 @@
+.home__grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 2fr fr;
+
+  .home__grid-box4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+}

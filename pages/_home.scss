@@ -56,7 +56,10 @@
       text-underline-offset: 20px;
       font-size: 20px;
     }
-
+    .button-vertical {
+      position: relative;
+      left: 300px;
+    }
     .home__flex-box1 {
       background-image: url(/images/rooms/1.jpg);
       background-position: center;
@@ -97,6 +100,10 @@
       width: 48%;
       height: 350px;
       margin-top: 3%;
+      .button-vertical {
+        position: relative;
+        left: 530px;
+      }
     }
     .home__flex-box5 {
       background-image: url(/images/rooms/7.jpg);
@@ -105,6 +112,55 @@
       width: 48%;
       height: 350px;
       margin-top: 3%;
+      .button-vertical {
+        position: relative;
+        left: 530px;
+      }
+    }
+  }
+}
+.home__article3 {
+  @include article-color($background-color-main-medium);
+  .article-marge {
+    display: flex;
+    .home__article-image {
+      width: 50%;
+      img {
+        width: 100%;
+      }
+    }
+    .home__article-description {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      background-color: $background-color-main-light;
+      div {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.article-marge-inverted {
+  @extend .article-marge;
+  flex-direction: row-reverse;
+  .home__article-image {
+    width: 50%;
+    img {
+      width: 100%;
+    }
+  }
+  .home__article-description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: $background-color-main-light;
+    div {
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
     }
   }
 }

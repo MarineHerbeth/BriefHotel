@@ -39,9 +39,72 @@
 
 .home__article2 {
   @include article-color($background-color-main-dark);
-  .home__grid-box1 {
-    background-image: url(/images/rooms/1.jpg);
-    background-position: center;
-    background-size: cover;
+  .home__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    p {
+      position: relative;
+      top: 60%;
+      left: 5%;
+      font-size: 20px;
+    }
+
+    span {
+      text-decoration: underline;
+      text-underline-offset: 20px;
+      font-size: 20px;
+    }
+
+    .home__flex-box1 {
+      background-image: url(/images/rooms/1.jpg);
+      background-position: center;
+      background-size: cover;
+      width: 31%;
+      height: 500px;
+      p {
+        position: relative;
+        top: 72%;
+      }
+    }
+    .home__flex-box2 {
+      background-image: url(/images/rooms/2.jpg);
+      background-position: center;
+      background-size: cover;
+      width: 31%;
+      height: 500px;
+      p {
+        position: relative;
+        top: 72%;
+      }
+    }
+    .home__flex-box3 {
+      background-image: url(/images/rooms/3.jpg);
+      background-position: center;
+      background-size: cover;
+      width: 31%;
+      height: 500x;
+      p {
+        position: relative;
+        top: 72%;
+      }
+    }
+    .home__flex-box4 {
+      background-image: url(/images/rooms/4.jpg);
+      background-position: center;
+      background-size: cover;
+      width: 48%;
+      height: 350px;
+      margin-top: 3%;
+    }
+    .home__flex-box5 {
+      background-image: url(/images/rooms/7.jpg);
+      background-position: center;
+      background-size: cover;
+      width: 48%;
+      height: 350px;
+      margin-top: 3%;
+    }
   }
 }

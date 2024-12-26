@@ -1,0 +1,22 @@
+.header__button {
+  text-align: center;
+  border: white solid 1px;
+  width: 20%;
+  padding: 20px 10px 20px 10px;
+  margin-top: 50px;
+  a {
+    text-decoration: none;
+    @include slogan-size;
+  }
+}
+
+.button-vertical {
+  border: white solid 1px;
+  rotate: -90deg;
+  width: 150px;
+  text-align: center;
+  a {
+    text-decoration: none;
+    @include slogan-size;
+  }
+}

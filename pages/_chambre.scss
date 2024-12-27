@@ -1,0 +1,73 @@
+.article {
+  @include article-color($background-color-main-medium);
+  display: flex;
+  justify-content: center;
+  .article-marge {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .article-description {
+      width: 50%;
+    }
+  }
+}
+
+.article-marge {
+  width: 90%;
+  margin: auto;
+}
+
+.home__article2 {
+  @include article-color($background-color-main-dark);
+  .home__grid-box1 {
+    background-image: url(../images/rooms/4.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.list_icon-wright {
+  color: $text-grey;
+  padding-right: 5rem;
+  padding-left: auto;
+  h2 {
+    color: $text-white;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    margin-left: 3rem;
+  }
+}
+
+li {
+  list-style: none;
+  margin: 10%;
+  white-space: nowrap;
+  a {
+    text-decoration: none;
+    color: $text-grey;
+    &:hover {
+      color: $text-orange;
+    }
+  }
+}
+
+h1,
+h2 {
+  color: $text-white;
+}
+p {
+  color: $text-grey;
+}
+.check {
+  color: $text-grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  text-align: left;
+}
+
+.instructions {
+  white-space: nowrap;
+}

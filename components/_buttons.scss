@@ -28,3 +28,9 @@
   background-color: $text-orange;
   width: 200px;
 }
+
+@media screen and (max-width: 480px) {
+  .header__button {
+    min-width: 110px;
+  }
+}

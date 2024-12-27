@@ -2,7 +2,10 @@ main {
   margin-left: 20%;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 480px) {
+  main {
+    margin-left: 0px;
+  }
   html {
     overflow-x: hidden;
   }

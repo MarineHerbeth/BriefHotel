@@ -5,6 +5,7 @@
   .article-marge {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     .home__article-description {
@@ -13,6 +14,7 @@
     .images {
       width: 40%;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       img {
         width: 250px;

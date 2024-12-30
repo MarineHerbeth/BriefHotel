@@ -13,14 +13,14 @@
       width: 50%;
     }
     .images {
-      width: 40%;
+      width: 50%;
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
+      justify-content: space-around;
       img {
-        width: 250px;
+        width: 45%;
         text-align: center;
-        height: 350px;
+        min-height: 350px;
         object-fit: cover;
       }
       img[alt="Photographie restaurant"] {
@@ -184,7 +184,7 @@
         }
         .button-vertical {
           position: relative;
-          left: 70%;
+          left: 65%;
         }
       }
       .home__flex-box4,
@@ -193,7 +193,7 @@
         height: 400px;
         .button-vertical {
           position: relative;
-          left: 70%;
+          left: 65%;
         }
       }
     }
@@ -237,7 +237,4 @@
       }
     }
   }
-}
-
-@media screen and (max-width: 480px) {
 }

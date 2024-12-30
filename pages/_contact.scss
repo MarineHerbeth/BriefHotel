@@ -18,9 +18,9 @@ justify-content: space-around;
 }
 
 /*--taille icônes--*/
-.flaticon-call orange {
-    font-size:50px;
-}
+
+
+
 .flaticon-envelope orange {
     width: 35px;
     height: 35px;
@@ -38,7 +38,7 @@ justify-content: space-around;
     justify-content: baseline;
     text-align: left;
     align-items: center;
-    margin: auto;
+    margin: 20px;
     .navigation__bottom-text {
       margin-left: 10px;
       p {
@@ -58,4 +58,8 @@ justify-content: space-around;
 /*-- couleur input noire--*/
 input {
     background-color: $background-color-main-medium
+}
+.input-container{
+    display:flex;
+    gap:10px;
 }

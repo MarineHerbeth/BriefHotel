@@ -11,6 +11,9 @@
     align-items: center;
     .home__article-description {
       width: 50%;
+      img {
+        width: 15px;
+      }
     }
     .images {
       width: 50%;
@@ -280,18 +283,15 @@
   margin: 0;
 }
 
-.option-cards {
+.options-container {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  gap: 20px;
+  flex-direction: row;
+  width: 80%;
 }
 
 .option-item {
   background-color: $background-color-main-light;
   padding: 20px;
-  border-radius: 0px;
-  width: 50%;
   text-align: left;
 }
 
@@ -339,10 +339,9 @@
 }
 
 .service-item {
-  background-color: $background-color-main-light;
   padding: 20px;
-  border-radius: 8px;
-  text-align: center;
+  border: solid $text-grey 1px;
+  text-align: left;
 }
 
 .service-item img {

@@ -131,9 +131,12 @@
       flex-direction: column;
       background: $background-color-nav;
       overflow: hidden;
-      width: 85%;
+      width: 95%;
       /* Pour que les liens soient "rangés" par défaut */
       transform: translateX(-230px);
+      a {
+        font-size: 15px;
+      }
     }
     #hamburger-logo,
     ul {

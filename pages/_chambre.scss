@@ -1,3 +1,7 @@
+header {
+  background-image: url(../images/rooms/4.jpg);
+}
+
 .article {
   @include article-color($background-color-main-medium);
   display: flex;
@@ -13,29 +17,15 @@
   }
 }
 
-.article-marge {
-  width: 90%;
-  margin: auto;
-}
-
-.home__article2 {
-  @include article-color($background-color-main-dark);
-  .home__grid-box1 {
-    background-image: url(../images/rooms/4.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-}
-
-.list_icon-wright {
+.list_icon {
+  display: flex;
   color: $text-grey;
-  padding-right: 5rem;
-  padding-left: auto;
+  padding-right: 12rem;
+
   h2 {
     color: $text-white;
     font-size: 1.5rem;
-    margin-bottom: 3rem;
-    margin-left: 3rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -43,6 +33,10 @@ li {
   list-style: none;
   margin: 10%;
   white-space: nowrap;
+  span {
+    color: $text-orange;
+  }
+
   a {
     text-decoration: none;
     color: $text-grey;
@@ -52,22 +46,24 @@ li {
   }
 }
 
-h1,
-h2 {
-  color: $text-white;
-}
-p {
-  color: $text-grey;
-}
-.check {
-  color: $text-grey;
+.article {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  width: 50%;
-  text-align: left;
+  align-items: flex-start;
+  @extend .list_icon;
 }
 
 .instructions {
   white-space: nowrap;
+}
+
+.button {
+  background-color: rgb(102, 103, 105);
+  color: white;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  font-size: larger;
 }

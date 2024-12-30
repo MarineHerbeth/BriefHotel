@@ -1,0 +1,49 @@
+ 
+body {
+    background-color: black; /*fond de page noir*/
+    }
+h2 {
+    color: white; /*texte titre blanc*/
+}
+p {
+    color: grey; /* texte paragraphre gris*/
+}
+
+
+  
+.divgenerale{
+    display: flex;
+    flex-direction: row;
+justify-content: space-around;
+}
+
+/*--taille icônes--*/
+.flaticon-call orange{
+    width: 15px;
+    height: 15px;
+}
+
+/*--centrage icones face texte--*/
+  
+  .contact__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    text-align: left;
+    align-items: center;
+    margin: auto;
+    .navigation__bottom-text {
+      margin-left: 10px;
+      p {
+        margin: 0;
+      }
+      p[class="orange"] {
+        font-size: x-large;
+      }
+    }
+}
+
+.carte{
+    display: flex;
+    justify-content:center;
+}

@@ -2,6 +2,11 @@ main {
   margin-left: 20%;
 }
 
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
 @media screen and (max-width: 480px) {
   main {
     margin-left: 0px;

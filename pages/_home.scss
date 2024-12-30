@@ -2,6 +2,7 @@
   @include article-color($background-color-main-medium);
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   .article-marge {
     display: flex;
     flex-direction: row;

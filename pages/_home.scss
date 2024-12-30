@@ -161,6 +161,7 @@
 
   h2 {
     font-size: 15px;
+    margin-bottom: -10px;
   }
 
   .home__article2 {
@@ -205,6 +206,28 @@
         .button-filled {
           margin: auto;
           margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  .home__article {
+    .article-marge {
+      flex-direction: column;
+      .home__article-description {
+        width: 100%;
+      }
+      .images {
+        flex-direction: row;
+        width: 100%;
+        img {
+          width: 45%;
+        }
+        img[alt="Photographie chambre"] {
+          position: initial;
+        }
+        img[alt="Photographie restaurant"] {
+          position: initial;
         }
       }
     }

@@ -18,9 +18,16 @@ justify-content: space-around;
 }
 
 /*--taille icônes--*/
-.flaticon-call orange{
-    width: 15px;
-    height: 15px;
+.flaticon-call orange {
+    font-size:50px;
+}
+.flaticon-envelope orange {
+    width: 35px;
+    height: 35px;
+}
+.flaticon-location-pin orange {
+    width: 35px;
+    height: 35px;
 }
 
 /*--centrage icones face texte--*/
@@ -46,4 +53,9 @@ justify-content: space-around;
 .carte{
     display: flex;
     justify-content:center;
+}
+
+/*-- couleur input noire--*/
+.input[type="text"] {
+    background-color: black;
 }

@@ -1,6 +1,6 @@
  
 body {
-    background-color: black; /*fond de page noir*/
+    background-color: $background-color-main-medium
     }
 h2 {
     color: white; /*texte titre blanc*/
@@ -56,6 +56,6 @@ justify-content: space-around;
 }
 
 /*-- couleur input noire--*/
-.input[type="text"] {
-    background-color: black;
+input {
+    background-color: $background-color-main-medium
 }

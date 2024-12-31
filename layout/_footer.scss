@@ -13,6 +13,7 @@
       justify-content: left;
 
       .apropos_h2 {
+        @extend .font-title;
         text-align: left;
         overflow-wrap: break-word;
         padding-bottom: 2rem;

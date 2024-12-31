@@ -1,9 +1,6 @@
 /*section2 A propos*/
 .article2 {
   @include article-color($background-color-main-medium);
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
   .article-marge2 {
     @extend .article-marge;
     display: flex;
@@ -64,6 +61,15 @@
       .copyright {
         color: $text-grey;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .article2 {
+    .article-marge2 {
+      display: flex;
+      flex-direction: column;
     }
   }
 }

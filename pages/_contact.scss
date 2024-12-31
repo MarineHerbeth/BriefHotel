@@ -12,9 +12,17 @@ p {
 
   
 .divgenerale{
+    @extend .article-marge;
     display: flex;
     flex-direction: row;
-justify-content: space-around;
+justify-content:space-around;
+.divgauche{
+ width: 50%;
+}
+.divdroite{
+    width: 50%;
+
+}
 }
 
 /*--taille icônes--*/
@@ -59,7 +67,16 @@ justify-content: space-around;
 input {
     background-color: $background-color-main-medium
 }
-.input-container{
-    display:flex;
-    gap:10px;
+.contact__container {
+display:flex;
+flex-direction: row;
+justify-content: space-between; 
+flex-wrap: wrap;
+div{
+    display: flex;
+    flex-direction: column;
+    width: 45%; 
+    margin-bottom: 40px;    
+
+} 
 }

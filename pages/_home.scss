@@ -289,14 +289,25 @@
   width: 80%;
 }
 
+.options-title {
+  width: 33%;
+  padding: 20px 20px 20px 0px;
+}
+
 .option-item {
   background-color: $background-color-main-light;
-  padding: 20px;
+  padding: 50px;
   text-align: left;
+  width: 33%;
+  span {
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
 }
 
 .option-item h3 {
-  font-size: 20px;
+  @extend .font-title;
+  font-size: 30px;
   margin-bottom: 10px;
 }
 
@@ -312,6 +323,9 @@
 
 .option-item li {
   margin-bottom: 10px;
+  img {
+    margin-right: 15px;
+  }
 }
 
 .services-section {
@@ -326,8 +340,7 @@
 }
 
 .services-container h1 {
-  font-size: 24px;
-  letter-spacing: 5px;
+  font-size: 60px;
   margin-bottom: 40px;
   text-align: left;
 }
@@ -340,7 +353,7 @@
 
 .service-item {
   padding: 20px;
-  border: solid $text-grey 1px;
+  border: solid rgba($color: #7e7e7e, $alpha: 0.1) 1px;
   text-align: left;
 }
 
@@ -351,11 +364,12 @@
 }
 
 .service-item h3 {
-  font-size: 18px;
+  font-size: 25px;
   margin-bottom: 10px;
+  font-family: Playfair;
 }
 
 .service-item p {
-  font-size: 14px;
+  font-size: 25px;
   margin-bottom: 0;
 }

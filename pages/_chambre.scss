@@ -21,6 +21,7 @@
 }
 #top_duscman {
   color: $text-orange;
+  @extend .font-title;
 }
 
 /*Aménagement list*/

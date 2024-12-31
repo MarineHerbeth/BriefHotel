@@ -19,12 +19,15 @@
     }
   }
 }
+#top_duscman {
+  color: $text-orange;
+}
 
 /*Aménagement list*/
 .list_icon {
   display: flex;
   padding-right: 2rem;
-  padding-left: 3rem;
+  padding-left: 3.5rem;
   color: $text-grey;
   li {
     color: $text-grey;
@@ -50,6 +53,7 @@
 }
 
 /*check-in/out list*/
+
 .check {
   li {
     color: $text-grey;
@@ -85,6 +89,7 @@
   display: inline-block;
   border: none;
   font-size: larger;
+  cursor: pointer;
 }
 
 /*section2 A propos*/
@@ -94,12 +99,22 @@
   justify-content: center;
   flex-wrap: wrap;
   .article-marge2 {
+    @extend .article-marge;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: baseline;
+    width: 80%;
+
     .article-description2 {
-      width: 50%;
+      width: 100%;
+      justify-content: left;
+
+      .apropos_h2 {
+        text-align: left;
+        overflow-wrap: break-word;
+        padding-bottom: 2rem;
+      }
     }
   }
 }
@@ -125,7 +140,7 @@
 
   a {
     color: $text-white;
-    text-decoration-color: orange;
+    text-decoration-color: #a4834c;
   }
   .icons {
     margin-top: 1.5rem;

@@ -19,6 +19,9 @@ justify-content:space-around;
 .divgauche{
  width: 60%; 
 }
+.contact__info{
+    margin-top: 45px;    
+}
 .divdroite{
     width: 40%;
 
@@ -62,10 +65,13 @@ justify-content:space-around;
     display: flex; 
     justify-content:center; 
     margin-top: 100px;  
-}
+  
+} 
+
 
 /*-- couleur input noire--*/
 input {
+    color: $text-grey; 
     background-color: $background-color-main-medium;
     border-top: none;
     border-right: none; 

@@ -31,7 +31,7 @@
       }
     }
     .navigation__title {
-      font-size: 30px;
+      font-size: 50px;
       font-weight: 100;
     }
     .navigation__slogan {
@@ -52,6 +52,9 @@
       list-style: none;
       margin: 10%;
       a {
+        font-size: 20px;
+        letter-spacing: 2px;
+        font-weight: 400;
         text-decoration: none;
         color: $text-grey;
         &:hover {

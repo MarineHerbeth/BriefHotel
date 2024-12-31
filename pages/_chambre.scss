@@ -1,6 +1,6 @@
 .header__chambre {
   background-image: url(../images/rooms/4.jpg);
-  background-color: rgba(#000000, 0.5);
+  background-color: rgba(#000000, 0.4);
   background-blend-mode: overlay;
 }
 
@@ -15,32 +15,31 @@
     justify-content: space-between;
     align-items: center;
     .article-description {
-      width: 50%;
+      width: 60%;
     }
   }
 }
 
+/*Aménagement list*/
 .list_icon {
   display: flex;
-  padding-right: 5rem;
+  padding-right: 2rem;
   padding-left: 3rem;
   color: $text-grey;
-
+  li {
+    color: $text-grey;
+    list-style: none;
+    white-space: nowrap;
+    margin-bottom: 10px;
+  }
   h2 {
     color: $text-white;
-    font-size: 1.5rem;
-    padding-bottom: 3rem;
+    font-size: x-large;
+    padding-bottom: 2rem;
   }
-}
-
-li {
-  list-style: none;
-  white-space: nowrap;
-  margin-bottom: 10px;
   span {
     color: $text-orange;
   }
-
   a {
     text-decoration: none;
     color: $text-grey;
@@ -50,14 +49,31 @@ li {
   }
 }
 
+/*check-in/out list*/
+.check {
+  li {
+    color: $text-grey;
+    list-style: none;
+    white-space: nowrap;
+    margin-bottom: 10px;
+  }
+  span {
+    color: $text-orange;
+  }
+  a {
+    text-decoration: none;
+    color: $text-grey;
+    &:hover {
+      color: $text-orange;
+    }
+  }
+}
+
+/*check list position*/
 .article {
   display: flex;
   justify-content: flex-start;
   @extend .list_icon;
-}
-
-.instructions {
-  white-space: nowrap;
 }
 
 .button {
@@ -71,26 +87,48 @@ li {
   font-size: larger;
 }
 
+/*section2 A propos*/
+.article2 {
+  @include article-color($background-color-main-medium);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .article-marge2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .article-description2 {
+      width: 50%;
+    }
+  }
+}
+
+/*section2 list contact*/
 .list_contact {
   display: flex;
   color: $text-white;
-  padding: Orem 10rem 5rem 10rem;
-
-  h2 {
-    color: $text-white;
-    font-size: larger;
-    padding-bottom: 3rem;
-  }
-  li {
+  padding: 5rem;
+  ul {
     color: $text-white;
     list-style: none;
     white-space: nowrap;
     margin-bottom: 10px;
+  }
+  h2 {
+    font-size: larger;
+    padding-bottom: 3rem;
+  }
+  .adress {
+    color: $text-grey;
+  }
 
-    a {
-      text-decoration: none;
-      color: $text-white;
-    }
+  a {
+    color: $text-white;
+    text-decoration-color: orange;
+  }
+  .icons {
+    margin-top: 1.5rem;
   }
 }
 

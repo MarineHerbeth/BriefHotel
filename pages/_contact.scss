@@ -17,10 +17,10 @@ p {
     flex-direction: row;
 justify-content:space-around;
 .divgauche{
- width: 50%;
+ width: 60%; 
 }
 .divdroite{
-    width: 50%;
+    width: 40%;
 
 }
 }
@@ -59,13 +59,17 @@ justify-content:space-around;
 }
 
 .carte{
-    display: flex;
-    justify-content:center;
+    display: flex; 
+    justify-content:center; 
+    margin-top: 100px;  
 }
 
 /*-- couleur input noire--*/
 input {
-    background-color: $background-color-main-medium
+    background-color: $background-color-main-medium;
+    border-top: none;
+    border-right: none; 
+    border-bottom: solid 1px rgba($color: $text-grey, $alpha: 0.5);  
 }
 .contact__container {
 display:flex;
@@ -76,7 +80,23 @@ div{
     display: flex;
     flex-direction: column;
     width: 45%; 
-    margin-bottom: 40px;    
+    margin-bottom: 40px; 
+    label{
+        color: $text-grey; 
+    }   
 
 } 
 }
+.contact__message {
+    display: flex; 
+    color: $text-grey; 
+flex-direction: column;
+textarea {
+    background-color: $background-color-main-medium;  
+    border-top: none;
+    border-right: none; 
+    border-left: none;  
+    border-bottom: solid 1px rgba($color: $text-grey, $alpha: 0.5);  
+}
+}
+ 

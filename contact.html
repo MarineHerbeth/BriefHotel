@@ -103,39 +103,39 @@
         <form method="get" action="">
           <div class="contact__container">
           <div>
-            <label for="nom">Votre nom*:</label>
-            <input type="text" name id="nom" placeholder="champ1">
+           
+            <input type="text" name id="nom" placeholder="Votre nom*" required>
           </div>
         
 
        
           <div>
-            <label for="email">Votre e-mail*:</label>
-            <input type="email" name id="email" placeholder="champ2">
+            
+            <input type="email" name id="email" placeholder="Votre email*" required>
           </div>
        
 
         
           <div>
-            <label for="telephone">Votre numéro de téléphone*:</label>
-            <input type="tel" id="tel" name="tel">
+            
+            <input type="tel" id="tel" name="tel" placeholder="Votre numéro de téléphone*" required>
           </div>
        
 
         
           <div>
-            <label for="sujet">Sujet*:</label>
-            <input type="text" name id="sujet">
+            
+            <input type="text" name id="sujet" placeholder="Sujet*" required>
           </div>
           </div>
 
-          <div>
+          <div class="contact__message">
             <label for="message">Message*:</label>
-            <input type="text" name id="message">
+            <textarea name="message" id="message" rows="4" required></textarea> 
           </div>
 
         <!-- Bouton Envoyer -->
-        <input type="submit" value="Envoyer">
+        <input type="submit" value="ENVOYER" class="button-filled white" >
         </form>
 
 

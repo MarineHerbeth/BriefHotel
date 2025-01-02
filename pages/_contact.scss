@@ -97,6 +97,10 @@ input {
   }
 }
 
+iframe {
+  filter: grayscale(99);
+}
+
 @media screen and (max-width: 480px) {
   .divgenerale {
     flex-direction: column;

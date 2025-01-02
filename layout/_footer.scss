@@ -1,22 +1,28 @@
 /*section2 A propos*/
 .article2 {
   @include article-color($background-color-main-medium);
-  .article-marge2 {
-    @extend .article-marge;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+
+  .ch_article-marge2 {
     display: flex;
     flex-direction: row;
-    align-items: baseline;
-    width: 80%;
+    justify-content: left;
+    margin-left: 3rem;
 
     .article-description2 {
-      width: 100%;
-      justify-content: left;
+      width: 60%;
+      align-items: baseline;
 
       .apropos_h2 {
         @extend .font-title;
         text-align: left;
-        overflow-wrap: break-word;
         padding-bottom: 2rem;
+      }
+      p {
+        word-break: break-all;
+        width: 70%;
       }
     }
   }
@@ -25,22 +31,29 @@
 /*section2 list contact*/
 .list_contact {
   display: flex;
+  padding-right: 3rem;
   color: $text-white;
-  padding: 5rem;
-  ul {
+
+  li {
     color: $text-white;
     list-style: none;
     white-space: nowrap;
     margin-bottom: 10px;
   }
+
   h2 {
-    font-size: larger;
-    padding-bottom: 3rem;
+    @extend .font-title;
+    color: $text-white;
+    padding-bottom: 2rem;
   }
-  .adress {
+
+  .adress_f {
     color: $text-grey;
   }
 
+  span {
+    color: $text-white;
+  }
   a {
     color: $text-white;
     text-decoration-color: #a4834c;
@@ -53,12 +66,14 @@
 .footer {
   background-color: $background-color-main-dark;
   margin-left: 20%;
+
   .footer_div {
     display: flex;
     justify-content: center;
 
     .footer_text {
       color: $text-white;
+
       .copyright {
         color: $text-grey;
       }
@@ -68,7 +83,7 @@
 
 @media screen and (max-width: 480px) {
   .article2 {
-    .article-marge2 {
+    .ch_article-marge2 {
       display: flex;
       flex-direction: column;
     }

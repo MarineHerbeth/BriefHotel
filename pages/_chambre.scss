@@ -9,7 +9,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  .article-marge {
+  .ch_article-marge {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -54,8 +54,12 @@
 }
 
 /*check-in/out list*/
-
 .check {
+  justify-content: space-between;
+  padding-right: 5rem;
+  padding-left: 0;
+  color: $text-grey;
+
   li {
     color: $text-grey;
     list-style: none;
@@ -81,7 +85,7 @@
   @extend .list_icon;
 }
 
-.button {
+.button_chambre {
   background-color: rgb(102, 103, 105);
   color: white;
   padding: 0.5rem 2rem;

@@ -14,9 +14,9 @@
       rel="stylesheet"
     />
     <link
-    href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
-    rel="stylesheet"
-  />
+      href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -36,7 +36,7 @@
         <ul>
           <li><a href="index.html">ACCUEIL</a></li>
           <li><a href=""> A PROPOS</a></li>
-          <li><a href="">CHAMBRES & SUITES</a></li>
+          <li><a href="chambre.html">CHAMBRES & SUITES</a></li>
           <li><a href=""> RESTAURANT</a></li>
           <li><a href="">CENTRE DE BIEN-ÊTRE</a></li>
           <li><a href="">ACTUALITÉ</a></li>
@@ -52,158 +52,188 @@
       </div>
     </nav>
 
+    <main>
+      <div class="divgenerale">
+        <!--ouverture div generale-->
 
-  <main>
-    <div class="divgenerale"> <!--ouverture div generale-->
+        <div class="divgauche">
+          <!--ouverture sous div de gauche-->
 
-      <div class="divgauche"> <!--ouverture sous div de gauche-->
+          <h1 class="white">Ducsman</h1>
+          <p>
+            Nous sommes à votre disposition pour toute question relative à votre
+            séjour ou <br />
+            pour vous préparer le plus luxueux des voyages.
+          </p>
 
-        <h1 class="white">Ducsman</h1> 
-        <p>Nous sommes à votre disposition pour toute question relative à votre séjour ou <br>
-          pour vous préparer le plus
-          luxueux
-          des voyages.</p>
+          <div>
+            <!--ouverture sous sous div icônes-->
+            <div class="contact__info">
+              <div class="flaticon-call orange"></div>
+              <div class="navigation__bottom-text">
+                <p>Informations & Réservations</p>
+                <p class="orange">03 20 01 02 03</p>
+              </div>
+            </div>
 
-        <div> <!--ouverture sous sous div icônes-->
-          <div class="contact__info">
-            <div class="flaticon-call orange"></div> 
-            <div class="navigation__bottom-text">
-              
-              <p>Informations & Réservations</p>
-              <p class="orange">03 20 01 02 03</p>
+            <div class="contact__info">
+              <div class="flaticon-envelope orange"></div>
+              <div class="navigation__bottom-text">
+                <p>E-mail</p>
+                <p class="orange">info@ducsman-group.com</p>
+              </div>
+            </div>
+
+            <div class="contact__info">
+              <div class="flaticon-location-pin orange"></div>
+              <div class="navigation__bottom-text">
+                <p>Adresse</p>
+                <p>
+                  23 avenue des nations Unies <br />
+                  75001 Paris
+                </p>
+                <br />
+              </div>
             </div>
           </div>
+          <!--fermeture ss ss div icones-->
+        </div>
+        <!--fermeture ss div de gauche-->
 
-          <div class="contact__info">
-            <div class="flaticon-envelope orange"></div>
-            <div class="navigation__bottom-text">
-              <p>E-mail</p>
-              <p class="orange">info@ducsman-group.com</p>
+        <div class="divdroite">
+          <!--ouverture sous div de droite-->
+
+          <h1 class="white">Restons en contact</h1>
+
+          <!--input-->
+          <form method="get" action="">
+            <div class="contact__container">
+              <div>
+                <input
+                  type="text"
+                  name="nom"
+                  id="nom"
+                  placeholder="Votre nom*"
+                  required
+                />
+              </div>
+
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Votre email*"
+                  required
+                />
+              </div>
+
+              <div>
+                <input
+                  type="tel"
+                  id="tel"
+                  name="tel"
+                  placeholder="Votre numéro de téléphone*"
+                  required
+                />
+              </div>
+
+              <div>
+                <input
+                  type="text"
+                  name="sujet"
+                  id="sujet"
+                  placeholder="Sujet*"
+                  required
+                />
+              </div>
             </div>
-          </div>
 
-          <div class="contact__info">
-            <div class="flaticon-location-pin orange"></div>
-            <div class="navigation__bottom-text">
-              <p>Adresse</p>
-              <p>23 avenue des nations Unies <br>
-                75001 Paris </p> <br>
+            <div class="contact__message">
+              <label for="message">Message*:</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="4"
+                required
+              ></textarea>
             </div>
+
+            <!-- Bouton Envoyer -->
+            <input type="submit" value="ENVOYER" class="button-filled white" />
+          </form>
+        </div>
+        <!--Fermeture ss div de droite-->
+      </div>
+      <!--fermeture div generale-->
+
+      <div class="carte">
+        <!--div de carte-->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.835382179078!2d2.288934276967991!3d48.86134940049757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe39df5463f%3A0xb358c25f43492e83!2s23%20Av.%20des%20Nations%20Unies%2C%2075116%20Paris!5e0!3m2!1sfr!2sfr!4v1735226405312!5m2!1sfr!2sfr"
+          width="1200"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        >
+        </iframe>
+      </div>
+
+      <section class="article2">
+        <div class="article-marge2">
+          <div class="article-description2">
+            <h2 class="apropos_h2">A propos de notre hôtel</h2>
+            <p>
+              Le seul hôtel 5 étoiles de Paris. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. <br />
+              Dicta obcaecati enim mollitia maiores voluptas voluptatum dolorem
+              quis aliquid iste, a similique laudantium doloremque officia quos
+              ipsam veritatis, commodi, quas nihil. Sunt autem eveniet
+              perferendis aspernatur quae libero voluptates eos neque dolore
+              tempore veritatis quaerat, provident obcaecati vitae praesentium
+              officiis reprehenderit impedit minus?
+            </p>
+            <br />
           </div>
 
-        </div> <!--fermeture ss ss div icones-->
-
-      </div> <!--fermeture ss div de gauche-->
-
-      <div class="divdroite"> <!--ouverture sous div de droite-->
-
-        <h1 class="white">Restons en contact</h1> 
-
-<!--input-->
-        <form method="get" action="">
-          <div class="contact__container">
-          <div>
-           
-            <input type="text" name="nom" id="nom" placeholder="Votre nom*" required>
+          <!--section2 list contact-->
+          <div class="list_contact">
+            <ul>
+              <li><h2>Contact</h2></li>
+              <li class="adress">
+                23 avenue des Nations Unies <br />
+                7500 paris
+              </li>
+              <li>
+                <h2><span class="flaticon-call"></span>03 20 01 02 23</h2>
+              </li>
+              <li>
+                <a href="" class="mailto">info@ducsman.com</a>
+              </li>
+              <li class="icons">
+                <span class="ti-instagram"></span> &nbsp;
+                <span class="ti-twitter"></span> &nbsp;
+                <span class="ti-youtube"></span> &nbsp;
+                <span class="ti-facebook"></span> &nbsp;
+                <span class="ti-pinterest"></span> &nbsp;
+              </li>
+            </ul>
           </div>
-        
+        </div>
+      </section>
+    </main>
 
-       
-          <div>
-            
-            <input type="email" name="email" id="email" placeholder="Votre email*" required>
-          </div>
-       
-
-        
-          <div>
-            
-            <input type="tel" id="tel" name="tel" placeholder="Votre numéro de téléphone*" required>
-          </div>
-       
-
-        
-          <div>
-            
-            <input type="text" name="sujet" id="sujet" placeholder="Sujet*" required>
-          </div>
-          </div>
-
-          <div class="contact__message">
-            <label for="message">Message*:</label>
-            <textarea name="message" id="message" rows="4" required></textarea> 
-          </div>
-
-        <!-- Bouton Envoyer -->
-        <input type="submit" value="ENVOYER" class="button-filled white" >
-        </form>
-
-
-      </div> <!--Fermeture ss div de droite-->
-    </div> <!--fermeture div generale-->
-
-<div class="carte"> <!--div de carte-->
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.835382179078!2d2.288934276967991!3d48.86134940049757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe39df5463f%3A0xb358c25f43492e83!2s23%20Av.%20des%20Nations%20Unies%2C%2075116%20Paris!5e0!3m2!1sfr!2sfr!4v1735226405312!5m2!1sfr!2sfr"
-      width="1200" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"> </iframe> 
-</div>
-
-<section class="article2">
-  <div class="article-marge2">
-    <div class="article-description2">
-      <h2 class="apropos_h2">A propos de notre hôtel</h2>
-      <p>
-        Le seul hôtel 5 étoiles de Paris. Lorem ipsum dolor sit amet
-        consectetur adipisicing elit. <br />
-        Dicta obcaecati enim mollitia maiores voluptas voluptatum dolorem
-        quis aliquid iste, a similique laudantium doloremque officia quos
-        ipsam veritatis, commodi, quas nihil. Sunt autem eveniet
-        perferendis aspernatur quae libero voluptates eos neque dolore
-        tempore veritatis quaerat, provident obcaecati vitae praesentium
-        officiis reprehenderit impedit minus?
-      </p>
-      <br />
-    </div>
-
-    <!--section2 list contact-->
-    <div class="list_contact">
-      <ul>
-        <li><h2>Contact</h2></li>
-        <li class="adress">
-          23 avenue des Nations Unies <br />
-          7500 paris
-        </li>
-        <li>
-          <h2><span class="flaticon-call"></span>03 20 01 02 23</h2>
-        </li>
-        <li>
-          <a href="" class="mailto">info@ducsman.com</a>
-        </li>
-        <li class="icons">
-          <span class="ti-instagram"></span> &nbsp;
-          <span class="ti-twitter"></span> &nbsp;
-          <span class="ti-youtube"></span> &nbsp;
-          <span class="ti-facebook"></span> &nbsp;
-          <span class="ti-pinterest"></span> &nbsp;
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-</main>
-
-<!--Footer-->
-<footer class="footer">
-<div class="footer_div">
-  <p class="footer_text">
-    Mentions légales-ConditionsGénérales de Ventes-Politique de
-    confidentialité
-    <span class="copyright">-© Copyright 2023 - Ducsman Grap</span>
-  </p>
-</div>
-</footer>
-
-</body>
-
+    <!--Footer-->
+    <footer class="footer">
+      <div class="footer_div">
+        <p class="footer_text">
+          Mentions légales-ConditionsGénérales de Ventes-Politique de
+          confidentialité
+          <span class="copyright">-© Copyright 2023 - Ducsman Grap</span>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

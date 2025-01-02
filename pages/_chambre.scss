@@ -27,6 +27,8 @@ p {
 #top_duscman {
   color: $text-orange;
   @extend .font-title;
+  font-size: x-large;
+  margin-bottom: -2.5rem;
 }
 
 /*Aménagement list*/

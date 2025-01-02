@@ -1,3 +1,8 @@
+p {
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+}
+
 .header__chambre {
   background-image: url(../images/rooms/4.jpg);
   background-color: rgba(#000000, 0.4);
@@ -39,6 +44,8 @@
   h2 {
     color: $text-white;
     font-size: x-large;
+    letter-spacing: 0;
+    transform: scaleY(1.2);
     padding-bottom: 2rem;
   }
   span {
@@ -86,7 +93,7 @@
 }
 
 .button_chambre {
-  background-color: rgb(102, 103, 105);
+  background-color: rgb(68, 68, 68);
   color: white;
   padding: 0.5rem 2rem;
   text-align: center;

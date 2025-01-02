@@ -34,11 +34,14 @@ header {
   header {
     margin-left: 0px;
     width: 100%;
-    #title {
-      overflow-wrap: normal;
-      font-size: 25px;
-      width: 50%;
-      letter-spacing: 5px;
+    .header__text {
+      #title {
+        overflow-wrap: normal;
+        font-size: 25px;
+        width: 50%;
+        letter-spacing: 5px;
+        text-align: center;
+      }
     }
   }
 }

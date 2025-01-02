@@ -19,7 +19,7 @@
         @extend .font-title;
         text-align: left;
         font-size: x-large;
-        letter-spacing: 0;
+        letter-spacing: 0em;
         transform: scaleY(1.2);
         padding-bottom: 2rem;
       }
@@ -36,6 +36,7 @@
   display: flex;
   padding-right: 3rem;
   color: $text-white;
+  font-family: "Playfair", serif;
 
   li {
     color: $text-white;
@@ -48,7 +49,7 @@
     @extend .font-title;
     color: $text-white;
     font-size: x-large;
-    letter-spacing: 0.8;
+    letter-spacing: 0.1em;
     transform: scaleY(1.2);
     padding-bottom: 2rem;
   }
